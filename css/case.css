@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/*クラス定義 (これより下を消す)*/
+#content {
+	background-color: #F6FCEB;
+}
+
+.case-inner {
+	padding: 64px 0 104px;
+	margin: 0 auto;
+	width: 850px;
+}
+
+.case-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.case-item {
+	width: 270px;
+	background-color: #fff;
+}
+
+.case-item img {
+	width: 100%;
+	height: 100%;
+}
+
+.case-text-content {
+	padding: 36px 24px;
+}
+
+.case-text-content h2 {
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	padding-bottom: 16px;
+}
+
+.case-text-content h2::after {
+	content: '';
+	height: 3px;
+	width: 25%;
+	position: absolute;
+	left: 0;
+	bottom: 0px;
+	background-color: #000;
+}
+
+.case-text-content p {
+	margin-top: 16px;
+	font-size: 14px;
+}

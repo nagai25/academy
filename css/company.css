@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+/*クラス定義 (これより下を消す)*/
+
+.company-inner {
+	padding: 64px 0 104px;
+}
+
+.company-table {
+	width: 960px;
+	margin: 0 auto 64px;
+}
+
+.company-table td {
+	padding: 25px 0 25px 12px;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.company-adress {
+	width: 960px;
+	margin: 64px auto 0;
+	font-size: 15px;
+}
+
+.company-tel {
+	margin-top: 16px;
+}
+
+.company-tel span {
+	font-weight: bold;
+	margin-right: 8px;
+}
