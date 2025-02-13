@@ -3,195 +3,145 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>IT muchi</title>
+    <title>PROFILE</title>
+    <link rel="stylesheet" href="./style.css" />
     <link rel="icon" href="./img/favicon.ico" />
-    <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- css -->
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Noto+Sans+JP:wght@500&family=Roboto:ital,wght@1,700&display=swap"
-      rel="stylesheet"
+    <!-- viewportの設定 -->
+    <meta
+      name="”viewport”"
+      content="”width"
+      ="device-width,initial-scale"
+      ="1.0″"
     />
   </head>
   <body>
-    <!-- bodyの中身を削除してください -->
-    <header id="header">
-      <div class="header-inner">
-        <h1>
-          <a href="./index.html">
-            <img class="header-logo" src="./img/logo.png" alt="ロゴ画像" />
-          </a>
-        </h1>
-        <nav class="header-menu">
-          <ul class="gnav">
-            <li class="menu-item">
-              <a href="./index.html">TOP</a>
-            </li>
-            <li class="menu-item">
-              <a href="./company.html">COMPANY</a>
-            </li>
-            <li class="menu-item">
-              <a href="./case.html">CASE</a>
-            </li>
-            <li class="menu-item">
-              <a href="./flow.html">FLOW</a>
-            </li>
-          </ul>
-          <a class="header-contact-btn" href="./contact.html"> CONTACT </a>
-        </nav>
+    <!-- 実装箇所 -->
+    <div class="big-box">
+      <!-- ヘッダー -->
+      <div class="header">
+        <img class="head-img" src="img/lesson1_logo.svg" />
+        <h1 class="nn">NIKO NAGAI</h1>
       </div>
-    </header>
-    <div id="main-visual">
-      <img src="./img/top.jpg" alt="メインビジュアル" class="main-visual-img" />
-      <div class="main-visual-text">
-        <div class="main-visual-slideTitle font-alegreya">BRIGHT FUTURE</div>
-        <div class="main-visual-slideText">挑戦する企業に明るい未来を。</div>
+      <!-- ヘッダー -->
+      <!-- メイン画像 -->
+      <div class="main-visual">
+        <img class="main-img" src="img/lesson1_mainvisual.png" />
       </div>
-    </div>
-    <main id="content">
-      <div class="content-inner">
-        <section id="about">
-          <h2 class="section-title font-alegreya">ABOUT</h2>
-          <div class="about-content">
-            <div class="about-content-innner">
-              <img
-                class="about-img"
-                src="./img/about-img01.jpg"
-                alt="ABOUTイメージ画像"
-              />
-              <div class="about-text-content">
-                <h3 class="about-headding">
-                  ヒトと企業をつなぐ。 <br />
-                  ITに特化した人財紹介サービスを <br />
-                  おこなっています。<br />
-                </h3>
-                <p>
-                  ITが社会を大きく左右する時代となった今、IT人材の確保・育成が経営において最も重要で強化しなければならない要素となってきました。
-                </p>
-                <p>
-                  ITが社会を大きく左右する時代となった今、IT人材の確そんなIT社会の中で私たちITmuchはIT人材に特化した人材紹介を通し、よりよい未来へのサポートを実現いたします。
+      <div class="main-visual2">
+        <img class="main-img2" src="./img/lesson1_mainvisual_sp.png" />
+      </div>
+      <!-- メイン画像 -->
+      <!-- メイン -->
+      <div class="main">
+        <!-- about -->
+        <div class="section-about big-content">
+          <div class="title-big-box">
+            <h2 class="title push">ABOUT</h2>
+            <div class="space-box"></div>
+          </div>
+          <div class="out-content">
+            <div class="about in-content">
+              <img class="icon" src="img/lesson1_profile.png" />
+              <div class="about-text">
+                <h3 class="my-name">NAGAI NIKO</h3>
+                <p class="text-box1">
+                  webデザイナー見習いとして、HTMLとCSSを学習中です。ウェブデザインの魅力に取り憑かれ、美しいデザインと使いやすいユーザーエクスペリエンスの両方を追及しています。プログラミングの世界に足跡を刻みながら、デジタル空間を魅力的に彩る方法を模索しています。
                 </p>
               </div>
             </div>
           </div>
-        </section>
-        <section id="point">
-          <h2 class="section-title font-alegreya">POINT</h2>
-          <p class="point-sentence">
-            IT muchが選ばれる3つのポイントをご紹介いたします。
-          </p>
-          <div class="point-item">
-            <img
-              src="./img/point-img01.jpg"
-              alt="ポイント画像1"
-              class="point-img"
-            />
-            <div class="point-text-content">
-              <p class="point-color-text">POINT01</p>
-              <h3 class="point-title">最短1週間でマッチング可能</h3>
-              <p class="point-text">
-                最速1週間で紹介が可能ため、至急で人財が必要になった場合でも紹介可能です。お気軽にお問い合わせください。
-              </p>
-            </div>
-          </div>
-          <div class="point-item">
-            <img
-              src="./img/point-img02.jpg"
-              alt="ポイント画像2"
-              class="point-img"
-            />
-            <div class="point-text-content">
-              <p class="point-color-text">POINT02</p>
-              <h3 class="point-title">教育コストがかかりません</h3>
-              <p class="point-text">
-                ITmuchでは育成プログラムを用意し企業様に求められる人財となるよう育成支援を実施しているため教育へのご負担を大幅に軽減することが可能です。
-              </p>
-            </div>
-          </div>
-          <div class="point-item">
-            <img
-              src="./img/point-img03.jpg"
-              alt="ポイント画像3"
-              class="point-img"
-            />
-            <div class="point-text-content">
-              <p class="point-color-text">POINT03</p>
-              <h3 class="point-title">初期費用0円</h3>
-              <p class="point-text">
-                完全成功報酬型のため、採用が決まるまで費用は一切かかりませんので安心してご利用ください。<br />
-                ※採用が確定すると、紹介手数料が発生いたします。
-              </p>
-            </div>
-          </div>
-        </section>
-        <section id="contact">
-          <span class="contact-bg-cover"></span>
-          <img
-            src="./img/contact-bg.jpg"
-            alt="コンタクト背景画像"
-            class="contact-bg-img"
-          />
-          <div class="contact-content">
-            <h3 class="contact-title font-alegreya">CONTACT</h3>
-            <p class="contact-title-sub">お問い合わせ</p>
-            <div class="contact-separater"></div>
-            <p class="contact-sentence">
-              少しでも気になることがございましたら、お気軽にご相談ください。
-            </p>
-            <a href="./contact.html" class="contact-btn">
-              お問い合わせはこちら
-            </a>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer id="footer">
-      <div class="footer-inner">
-        <div class="footer-wrapper">
-          <div class="footer-logo">
-            <a href="./index.html">
-              <img src="./img/logo-02.png" alt="ロゴ画像" />
-            </a>
-          </div>
-          <nav class="footer-menu">
-            <jul>
-              <li class="footer-menu-item">
-                <a href="./index.html">TOP</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="./company.html">COMPANY</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="./case.html">CASE</a>
-              </li>
-              <li class="footer-menu-item">
-                <a href="./flow.html">FLOW</a>
-              </li>
-            </jul>
-            <a class="footer-contact-btn" href="./contact.html">
-              お問い合わせ
-            </a>
-          </nav>
         </div>
-        <p class="copy-right">© 2023 株式会社IT muchi</p>
+        <!-- about -->
+        <!-- SKILLS -->
+        <div class="section-skills big-content">
+          <div class="title-big-box">
+            <h2 class="title push">SKILLS</h2>
+            <div class="space-box"></div>
+          </div>
+          <div class="out-content">
+            <ul class="skills-oya in-content">
+              <li class="skill-tx">
+                <h3 class="sub-title">HTML</h3>
+                <img class="skill-pic" src="img/html.png" />
+                <p class="text-box">
+                  HTMLまたはHyperText Markup
+                  Languageは、ハイパーテキストを記述するためのマークアップ言語の1つで、プログラミング言語ではない。主にWorld
+                  Wide Webにおいて、ウェブページを表現するために用いられる。
+                </p>
+              </li>
+              <li class="skill-tx">
+                <h3 class="sub-title">CSS</h3>
+                <img class="skill-pic" src="img/css.png" />
+                <p class="text-box">
+                  Cascading Style Sheetsは、HTML や XML
+                  の要素をどのように修飾するかを指示する仕様の一つで、World Wide
+                  Web Consortium
+                  がとりまとめ勧告する、文書の構造と体裁を分離させるという理念を実現するために提唱されたスタイルシートの具体的な仕様の一つ。
+                </p>
+              </li>
+              <li class="skill-tx">
+                <h3 class="sub-title">JavaScript</h3>
+                <img class="skill-pic" src="img/js.png" />
+                <p class="text-box">
+                  JavaScriptは、プログラミング言語であり、HyperText Markup
+                  LanguageやCascading Style Sheetsと並ぶ World Wide
+                  Webの中核技術の一つである。
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- SKILLS -->
+        <!-- favorite -->
+        <div class="section-favorites big-content">
+          <div class="title-big-box">
+            <h2 class="title push">FAVORITES</h2>
+            <div class="space-box"></div>
+          </div>
+          <div class="out-content">
+            <div id="favorite-box in-content">
+              <ul class="FAVORITES top-img">
+                <li>
+                  <img class="favorite-pic" src="img/lesson1_favorite2.png" />
+                </li>
+                <li>
+                  <img class="favorite-pic" src="img/lesson1_favorite1.png" />
+                </li>
+                <li>
+                  <img class="favorite-pic" src="img/lesson1_favorite3.png" />
+                </li>
+                <!-- <input
+                  id="go-text"
+                  class="text-go"
+                  type="submit"
+                  value="more"
+                /> -->
+              </ul>
+              <div class="text-go" id="more-btn">more</div>
+              <ul class="FAVORITES bottom-img">
+                <li>
+                  <img class="favorite-pic" src="img/lesson1_favorite5.png" />
+                </li>
+                <li>
+                  <img class="favorite-pic" src="img/lesson1_favorite6.png" />
+                </li>
+                <li>
+                  <img class="favorite-pic" src="img/lesson1_favorite4.png" />
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- favorite -->
       </div>
-    </footer>
-    <button id="page-top-btn">
-      <i class="fa-solid fa-chevron-up"></i>
-    </button>
-    <script src="./js/index.js"></script>
-    <!-- ここまで消す -->
+      <!-- メイン -->
+      <!-- フッダー -->
+      <div class="fodder">
+        <p class="name">©️NIKONAGAI 2024</p>
+      </div>
+      <!-- フッダー -->
+      <script src="lesson3.js"></script>
+    </div>
+    <!-- 実装箇所 -->
   </body>
 </html>
