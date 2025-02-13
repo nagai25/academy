@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/*クラス定義 (これより下を消す)*/
+
+.flow-inner {
+	padding: 64px 0 104px;
+	margin: 0 auto;
+	width: 850px;
+	display: flex;
+	justify-content: space-between;
+	color: #303030;
+}
+
+.flow-container {
+	position: relative;
+}
+
+.flow-container::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -72px;
+	width: 20%;
+	height: 85%;
+	background: linear-gradient(120.05deg, rgba(245, 255, 240, 0.7) -1.62%, rgba(250, 255, 228, 0.7) 54.71%);
+}
+
+.flow-item {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 64px;
+}
+
+.flow-img {
+	width: 250px;
+	position: relative;
+	padding-top: 36px;
+}
+
+.flow-img img {
+	width: 100%;
+}
+
+.flow-img p {
+	position: absolute;
+	top: -10px;
+	right: -32px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	align-items: center;
+}
+
+.flow-img p span {
+	font-size: 56px;
+}
+
+.flow-text-content {
+	flex-basis: 66%;
+	padding-top: 24px;
+	padding-left: 56px;
+}
+
+.flow-title {
+	font-weight: bold;
+	font-size: 24px;
+	padding-bottom: 16px;
+	position: relative;
+}
+
+.flow-title:after {
+	content: '';
+	height: 3px;
+	width: 10%;
+	background-color: #8fc54a;
+	bottom: 0;
+	left: 0;
+	position: absolute;
+}
+
+.flow-sentence {
+	margin-top: 24px;
+	font-size: 15px;
+}
+
+.flow-sentence a {
+	color: #1176d4;
+}

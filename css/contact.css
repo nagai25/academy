@@ -1,0 +1,183 @@
+@charset "UTF-8";
+
+/*クラス定義 (これより下を消す)*/
+
+#content {
+	background-color: #F6FCEB;
+}
+
+
+.contact-inner {
+	padding: 64px 0 104px;
+	margin: 0 auto;
+	width: 850px;
+}
+
+form p {
+	display: flex;
+	align-items: center;
+}
+
+form label {
+	width: 30%;
+	font-size: 15px;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+form label span {
+	position: absolute;
+	right: 25px;
+	padding: 2px 8px;
+	background-color: #f3d027;
+	color: #fff;
+	border-radius: 4px;
+}
+
+.form-item {
+	margin-bottom: 36px;
+}
+
+.form-parts {
+	width: 60%;
+	position: relative;
+}
+
+.error-message {
+	position: absolute;
+	left: 0;
+	bottom: -24px;
+	font-size: 15px;
+	color: #dc3232;
+}
+
+.form-input {
+	width: 100%;
+	border: 1px solid #8fc54a;
+	height: 48px;
+	border-radius: 8px;
+}
+
+form span input[type=date] {
+	width: 24%;
+	padding: 0 12px;
+}
+
+form span select {
+	width: 24%;
+	padding: 0 12px;
+	height: 48px;
+}
+
+form span textarea {
+	width: 100%;
+	border: 1px solid #8fc54a;
+	border-radius: 8px;
+}
+
+form input[type=radio] {
+	margin: 0;
+	display: block;
+	width: 16px;
+	height: 16px;
+	visibility: hidden;
+}
+
+.radio-buttons {
+	display: flex;
+	align-items: center;
+	width: 28%;
+}
+
+.form-radio-label {
+	margin-left: 12px;
+	position: relative;
+	cursor: pointer;
+}
+
+.form-radio-label::before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #7b7b7b;
+	border-radius: 100%;
+	cursor: pointer;
+	top: 2px;
+	left: -24px;
+}
+
+form input[type=radio]:checked+.form-radio-label::before {
+	background-color: #f3d027;
+	box-shadow: inset 0 0 0 2px #ffffff;
+}
+
+
+.checkboxies {
+	display: flex;
+	align-items: center;
+	width: 28%;
+}
+
+.form-checkbox-label {
+	margin-left: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.form-checkbox-label::before {
+	content: '';
+	background-color: #fff;
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border: 1px solid #7b7b7b;
+	cursor: pointer;
+	top: 2px;
+	left: -24px;
+}
+
+form input[type=checkbox]:checked+.form-checkbox-label::before {
+	background-color: #f3d027;
+	background-image: url(../img/form-check.svg);
+}
+
+.scroll-box {
+	margin-top: 24px;
+	width: 100%;
+	height: 200px;
+	overflow-y: scroll;
+	border: 1px solid #ddd;
+	background-color: #f8f4f4;
+}
+
+.scroll-box p:first-child {
+	font-weight: bold;
+	text-decoration: underline 1px solid black;
+}
+
+.scroll-box p {
+	margin-bottom: 8px;
+	font-size: 15px;
+	line-height: 28px;
+}
+
+.approval {
+	margin-top: 8px;
+	position: relative;
+}
+
+.submit-button {
+	margin-top: 24px;
+	text-align: center;
+}
+
+.submit-button input {
+	padding: 24px 180px;
+	border: none;
+	background-color: #8fc54a;
+	color: #fff;
+	cursor: pointer;
+}
