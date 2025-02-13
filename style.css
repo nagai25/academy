@@ -1,0 +1,390 @@
+@charset "UTF-8";
+
+/*---Reset---*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+img,
+form,
+table,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+img {
+  border-style: none;
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+em {
+  font-style: normal;
+}
+
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+
+strong.more {
+  color: #c30;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ",
+    Meiryo, "ＭＳ Ｐゴシック", sans-serif;
+}
+
+/*クラス定義(ここから下にクラスを追加して下さい)*/
+
+/* ヘッダー */
+.header {
+  width: 100%;
+  line-height: 64px;
+  background-color: #333;
+  display: flex;
+  text-align: left;
+}
+.head-img {
+  margin-left: 24px;
+  width: 64px;
+}
+.nn {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+}
+/* ヘッダー */
+/* メイン画像 */
+.main-img {
+  width: 100%;
+}
+.main-img2 {
+  display: none;
+}
+/* メイン画像 */
+/* メイン */
+.main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.title {
+  color: #000;
+  font-size: 32px;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  margin: 100px 0px 0px 0px;
+}
+/* about */
+.icon {
+  width: 160px;
+  height: 160px;
+}
+.about {
+  width: 800px;
+  margin: 64px auto 0;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.about-text {
+  width: 600px;
+}
+.my-name {
+  color: #000;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0px;
+}
+.text-box1 {
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+  box-sizing: content-box;
+}
+/* about */
+/* skills */
+.skills-oya {
+  display: flex;
+  justify-content: space-between;
+}
+.skill-tx {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sub-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+}
+.skill-pic {
+  height: 100px;
+  margin: 20px;
+}
+.text-box {
+  color: #000;
+  font-size: 14px;
+  font-weight: normal;
+}
+/* skills */
+.FAVORITES {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.FAVORITES.top-img {
+  padding-top: 48px;
+}
+.FAVORITES.bottom-img {
+  padding-bottom: 108px;
+}
+.FAVORITES li {
+  width: 30%;
+  margin-bottom: 34px;
+}
+.favorite-pic {
+  width: 100%;
+}
+.out-content {
+  display: flex;
+  justify-content: space-between;
+}
+.text-go {
+  display: none;
+}
+/* メイン */
+/* フッダー */
+.name {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 48px;
+  height: 25px;
+}
+.fodder {
+  background-color: #333;
+  margin-top: 20px;
+}
+/* フッダー */
+
+/* メディアクエリの設定（スマホ？表示） */
+@media (max-width: 767px) {
+  .big-box {
+    width: 100%;
+  }
+  /* ヘッダー */
+  .header {
+    width: 100%;
+    line-height: 64px;
+    background-color: #333;
+    display: flex;
+    text-align: left;
+  }
+  .head-img {
+    margin-left: 24px;
+    width: 64px;
+  }
+  .nn {
+    color: #fff;
+    padding: auto;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  /* ヘッダー */
+  /* メイン画像 */
+  .main-img {
+    display: none;
+  }
+  .main-img2 {
+    width: 100%;
+    display: block;
+  }
+  /* メイン画像 */
+  /* メイン */
+  .main {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .title {
+    color: #000;
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px solid #000;
+    text-align: center;
+    margin: 100px 0px 0px 0px;
+  }
+  .out-content {
+    position: relative;
+    height: 0;
+    /* max-height: 250px; */
+    overflow: hidden;
+    /* transition: max-height 0.6s; */
+    /* どのスタイルを transitionさせるか　↓全部*/
+    transition: all 0.6s;
+  }
+  .space-box {
+    height: 60px;
+  }
+  /* about */
+  .icon {
+    width: 160px;
+    height: 160px;
+  }
+  .about {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .my-name {
+    color: #000;
+    font-size: 17px;
+    font-weight: bold;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .text-box1 {
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+  }
+  /* #out-about {
+    overflow: hidden;
+    transition: 0.4s;
+    display: none;
+  } */
+  /* about */
+  /* skills */
+  .skills-oya {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skill-tx {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .sub-title {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px;
+    text-align: center;
+  }
+  .skill-pic {
+    height: auto;
+    margin-bottom: 25px;
+  }
+  .text-box {
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+  }
+  /* .out-skills {
+    overflow: hidden;
+    transition: 0.4s;
+    display: none;
+  } */
+  /* skills */
+  .FAVORITES {
+    display: flex;
+  }
+  .bottom-img {
+    display: none;
+  }
+  .FAVORITES.top-img {
+    padding: 0;
+  }
+  .FAVORITES.bottom-img {
+    padding: 0;
+  }
+  .bottom-img.show {
+    display: flex;
+  }
+  .FAVORITES li {
+    width: 100%;
+    margin-bottom: 34px;
+  }
+  .favorite-pic {
+    width: 100%;
+  }
+  /* .out-favorite {
+    transition: 0.4s;
+    overflow: hidden;
+    display: none;
+  } */
+  .text-go {
+    color: #fff;
+    background-color: #333;
+    margin: 0 auto 36px;
+    padding: 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    justify-content: center;
+    width: 50px;
+    display: flex;
+  }
+  /* メイン */
+  /* フッダー */
+  .name {
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 48px;
+    height: 25px;
+    margin-top: 100px;
+  }
+  .fodder {
+    background-color: #333;
+    margin-top: 20px;
+    width: 100%;
+  }
+  /* フッダー */
+}
